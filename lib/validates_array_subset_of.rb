@@ -39,7 +39,7 @@ module ActiveRecord
         superset = configuration[:in]
 
         validates_each attr_names, configuration do |record, attr_name, value|
-          record.errors.add attr_name, configuration[:message] unless (value - superset).empty?
+          record.errors.add attr_name, configuration[:message] unless value.is_a? Array and (value - superset).empty?
         end
       end # }}}
     end
