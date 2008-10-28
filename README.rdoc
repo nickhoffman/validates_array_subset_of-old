@@ -4,9 +4,10 @@ An ActiveRecord validation for determining if an Array is a subset of another Ar
 
 == Example
 
-For example, a real estate search that:
+A real estate search that:
 * includes only houses and condos;
 * in suburbia or the west-end.
+could be:
 
   class RealEstateSearch < ActiveRecord::Base
     # params[:styles]         == %w(House Condo)
