@@ -14,8 +14,8 @@ could be:
     # params[:styles] => %w(House Condo)
     #   --> This would pass validation.
     validates_array_subset_of :styles,
-      :in => %w(House Apartment Condo),
-      :message => 'What kind of property are you looking for??'
+      :in       => %w(House Apartment Condo),
+      :message  => 'What kind of property are you looking for??'
 
     # params[:neighbourhoods] => %w(Suburbia Mars)
     #   --> This would fail validation, because "Mars" is not in the Array below.
