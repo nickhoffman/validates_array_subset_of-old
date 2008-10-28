@@ -1,1 +1,1 @@
-# Include hook code here
+require 'validates_array_subset_of'
